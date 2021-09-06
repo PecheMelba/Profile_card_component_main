@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Kumbh';
+    src: url('fonts/KumbhSans-Medium.ttf') format('truetype');
+}
+
+.attribution { font-size: 11px; text-align: center; color: hsl(0, 0%, 100%);}
+.attribution a { color: hsl(251, 100%, 50%); font-size: 11px }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: "Kumbh";
+    font-weight: 400;
+    font-size: 18px;
+    color: hsl(0, 0%, 59%);
+}
+
+html{height: 100%;}
+
+body
+{    
+    background: url("images/bg-pattern-top.svg") right 50vw bottom 40vh no-repeat fixed, url("images/bg-pattern-top.svg")  left 50vw top 40vh no-repeat fixed;
+    background-color: hsl(185, 75%, 39%); 
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+}
+
+main
+{
+    background: url("images/bg-pattern-card.svg") no-repeat;
+    background-size: 100% 40%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 25%;
+    height: 50%;
+}
+
+.profile_pic
+{
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+
+    margin-top: 25%;
+}
+
+.profile_name_age
+{
+    display: flex;
+    justify-content: space-between;
+
+    width: 40%;
+}
+.name_infos, .nb_followers,.nb_likes,.nb_photos {color: black; font-weight: 700;}
+
+.city{font-size: medium;}
+
+.separator
+{
+    background-color: hsla(0, 0%, 59%,0.3);
+    width: 100%;
+    height: 1px;
+}
+
+.stats
+{
+    width: 90%;
+
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+}
+
+.title_followers, .title_likes, .title_photos
+{
+    font-size: small;
+}
+
+@media all and (max-width: 650px)
+{
+    main
+    {
+        width: 85%;
+        height: 57%;
+        min-height: 300px;
+    }
+}
